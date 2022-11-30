@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+      <meta charset="UTF-8">
+      <title> flexbox java.html </title>
+      <link rel="stylesheet" href="flex java.css">
+</head>
+
+<body id=body>
+
+  <p>
+    <label for="colorbox">Choisissez votre couleur</label>
+    <select id="colorbox" onchange="fonction();">
+    <option value="1">blanc</option>
+    <option value="2">noir</option>
+    <option value="3">rouge</option>
+    <option value="4">vert</option>
+    <option value="5">bleu</option>
+    <option value="6">jaune</option>
+    </select>
+
+  </p>
+
+  <button onclick="noir()">
+  </button>
+  <button onclick="blanc()">
+  </button>
+
+
+  <div id="flexbox0">
+    <div id="flexbox2">
+      <a onclick="goku()" href="#"> <img src="goku.png"> </a>
+    </div>
+  <div id="flexbox1">
+      <a onclick="luffy()" href="#"> <img src="luffy.png"> </a>
+    </div>
+    <div id="flexbox3">
+      <a onclick="naruto()" href="#"> <img src="naruto.png"> </a>
+    </div>
+  </div>
+
+<div id="flexbox4">
+  <div id="flexbox5">
+    <img id="images" class="decorDBS"></img>
+    <img id=""></img>
+  </div>
+  <div id="flexbox6">
+    <p id="texte"></p>
+  </div>
+</div>
+
+<script>
+
+function noir()
+{
+  document.getElementById('texte').setAttribute("style",'color:black');
+}
+
+function blanc()
+{
+  document.getElementById('texte').setAttribute("style",'color:white',);
+}
+
+var decorDBS= document.getElementById("decorDBS");
+
+function goku()
+{
+  document.getElementById('texte').innerHTML=" je ne pense pas être un héro de la justice ou quelque chose comme ça. Mais ceux qui veulent faire du mal à mes amis, je leur pardonnerais jamais ! ";
+  document.getElementById('images').setAttribute ('src',"Images/goku.png");
+  document.getElementById('decorDBS').setAttribute ('src',"Images/DBS.jpg");
+}
+
+function luffy()
+{
+  document.getElementById('texte').innerHTML=" Je ne veux rien conquérir. C’est juste que la personne avec le plus de liberté sur la mer est le Roi Pirate. ";
+  document.getElementById('images').setAttribute ('src',"Images/luffy.png");
+  document.getElementById('decorOP').setAttribute ('src',"Images/wano.jpg");
+}
+
+function naruto()
+{
+  document.getElementById('texte').innerHTML=" Je ne reviens jamais sur ma parole, c’est ça pour moi être un ninja ! ";
+  document.getElementById('images').setAttribute ('src',"Images/naruto.png");
+  document.getElementById('decorNS').setAttribute ('src',"Images/narutoshippuden.webp");
+}
+
+function fonction()
+{
+  var colorbox= document.getElementById("colorbox");
+  var selectedValue = colorbox.options[colorbox.selectedIndex].value;
+
+  if(selectedValue==1)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:white;");
+  }
+  if(selectedValue==2)
+  {
+    document.getElementById('body').setAttribute('style',"color:white;background-color:black;");
+  }
+  if(selectedValue==3)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:red;");
+  }
+
+  if(selectedValue==4)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:green");
+  }
+  if(selectedValue==5)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:blue;");
+  }
+  if(selectedValue==6)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:yellow;");
+  }
+}
+
+</script>
+
+</body>
+</html>

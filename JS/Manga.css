@@ -1,0 +1,82 @@
+body
+{
+margin: 0;
+padding: 0;
+}
+
+#flexbox0
+{
+display: flex;
+width: 100%;
+}
+
+#flexbox1
+{
+width: 15%;
+}
+
+#flexbox2
+{
+width: 15%;
+}
+
+#flexbox3
+{
+width: 15%;
+}
+
+#flexbox1 a img
+{
+width: 150px;
+margin: auto;
+}
+
+#flexbox2 img 
+{
+width: 150px;
+margin: auto;
+}
+
+#flexbox3 img 
+{
+width: 140px;
+margin: auto;
+}
+
+#images
+{
+width: 100%;
+}
+
+#flexbox4
+{
+display: flex;
+width: 100%;
+}
+
+#flexbox5
+{
+width: 30%;
+}
+
+#flexbox6
+{
+width: 50%;
+}
+
+.decorDBS
+{
+display: block;
+background-image: url("DBS.jpg");
+width: 30%;
+}
+
+.decorOP
+{
+background-image: url("onepiece.jpg");
+}
+
+.decorNS
+{
+background-image: url("narutoshippuden.webp");
+}
