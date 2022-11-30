@@ -1,0 +1,96 @@
+<html>
+  <head>
+      <meta charset="UTF-8" /> 
+      <!-- Accents -->
+  </head>
+
+  <body id=body>
+
+    <p>
+      <label for="colorbox">Choisissez votre couleur</label>
+      <select id="colorbox" onchange="fonction();">
+
+      <option value="1">blanc</option>
+      <option value="2">noir</option>
+      <option value="3">rouge</option>
+      <option value="4">vert</option>
+      <option value="5">bleu</option>
+      <option value="6">jaune</option>
+
+      </select>
+       </p>
+
+    <button onclick="noir()">
+    </button>
+    <button onclick="blanc()">
+    </button>
+    <button onclick="pommes1()">
+    </button>
+    <button onclick="citron()">
+    </button>
+
+    <p id="pommes">
+    </p>
+
+    <img id=images>
+
+    <script>
+
+function noir()
+{
+  document.getElementById('pommes').setAttribute("style",'color:black');
+}
+
+function blanc()
+{
+  document.getElementById('pommes').setAttribute("style",'color:white','font-size:32px');
+}
+
+function pommes1()
+{
+  document.getElementById('pommes').innerHTML="  j'aime les pommes et voici différente pommes avec différentes couleurs et différents ressentis ";
+  document.getElementById('images').setAttribute ('src',"Pommes-reinettes-au-four.jpeg");
+}
+
+function citron()
+{
+  document.getElementById('pommes').innerHTML="  j'aime les citrons et voivi un citron bien jaune et bien juteux ";
+  document.getElementById('images').setAttribute ('src',"shutterstock_526531513.jpeg");
+}
+
+function fonction()
+{
+  var colorbox= document.getElementById("colorbox");
+  var selectedValue = colorbox.options[colorbox.selectedIndex].value;
+
+  if(selectedValue==1)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:white;")
+  }
+  if(selectedValue==2)
+  {
+    document.getElementById('body').setAttribute('style',"color:white;background-color:black;")
+  }
+  if(selectedValue==3)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:red;")
+  }
+
+  if(selectedValue==4)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:green")
+  }
+  if(selectedValue==5)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:blue;")
+  }
+  if(selectedValue==6)
+  {
+    document.getElementById('body').setAttribute('style',"color:black;background-color:yellow;")
+  }
+}
+
+    </script>
+
+</body>
+<html>
